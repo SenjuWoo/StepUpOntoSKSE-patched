@@ -8,13 +8,13 @@
 
 <p align="center">
   Compatibility rebuild of StepUpOnto SKSE by TheShinyHaxorus.<br>
-  Companion to <a href="https://github.com/ShugokiFable/Modern-NPC-Pathing">NPC Pathing NG</a>. Step-up behaviour is unchanged from original 1.5.
+  Companion to <a href="https://github.com/SenjuWoo/Modern-NPC-Pathing">NPC Pathing NG</a>. Step-up behaviour is unchanged from original 1.5.
 </p>
 
 <p align="center">
-  <a href="https://github.com/ShugokiFable/StepUpOntoSKSE-patched/actions/workflows/build.yml"><img src="https://github.com/ShugokiFable/StepUpOntoSKSE-patched/actions/workflows/build.yml/badge.svg" alt="Build"></a>
+  <a href="https://github.com/SenjuWoo/StepUpOntoSKSE-patched/actions/workflows/build.yml"><img src="https://github.com/SenjuWoo/StepUpOntoSKSE-patched/actions/workflows/build.yml/badge.svg" alt="Build"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f0b060?labelColor=0d0f11" alt="MIT License"></a>
-  <a href="https://github.com/ShugokiFable/StepUpOntoSKSE-patched/releases/tag/v1.5.1"><img src="https://img.shields.io/badge/release-v1.5.1-f0b060?labelColor=0d0f11" alt="v1.5.1"></a>
+  <a href="https://github.com/SenjuWoo/StepUpOntoSKSE-patched/releases/tag/v1.5.1"><img src="https://img.shields.io/badge/release-v1.5.1-f0b060?labelColor=0d0f11" alt="v1.5.1"></a>
   <img src="https://img.shields.io/badge/CommonLibSSE--NG-b93280e-8f9aa6?labelColor=0d0f11" alt="CommonLibSSE-NG pin">
 </p>
 
@@ -25,18 +25,18 @@
   ·
   <a href="#honest-status">Honest status</a>
   ·
-  <a href="https://github.com/ShugokiFable/Modern-NPC-Pathing">NPC Pathing NG</a>
+  <a href="https://github.com/SenjuWoo/Modern-NPC-Pathing">NPC Pathing NG</a>
   ·
   <a href="https://www.nexusmods.com/skyrimspecialedition/mods/175689">Original Nexus</a>
 </p>
 
 ## Why it exists
 
-While a SkyParkour animation is driving an actor (player parkour, or NPC parkour via [NPC Pathing NG](https://github.com/ShugokiFable/Modern-NPC-Pathing)), the character controller reads as **grounded and not moving**. That is exactly StepUpOnto's step trigger.
+While a SkyParkour animation is driving an actor (player parkour, or NPC parkour via [NPC Pathing NG](https://github.com/SenjuWoo/Modern-NPC-Pathing)), the character controller reads as **grounded and not moving**. That is exactly StepUpOnto's step trigger.
 
 The original build could fire its step-warp mid-climb or mid-vault and fight the parkour animation's position alignment.
 
-NPC SkyParkour, EVG marker routes, and navmesh unstuck failsafes live in **[Modern-NPC-Pathing](https://github.com/ShugokiFable/Modern-NPC-Pathing)**. This repo is only the StepUpOnto compatibility DLL.
+NPC SkyParkour, EVG marker routes, and navmesh unstuck failsafes live in **[Modern-NPC-Pathing](https://github.com/SenjuWoo/Modern-NPC-Pathing)**. This repo is only the StepUpOnto compatibility DLL.
 
 ## What this build changes
 
@@ -64,7 +64,7 @@ Output path when you build locally: `package/SKSE/Plugins/StepUpOntoSKSE.dll`.
 
 Windows x64, Visual Studio 2022 or 2026 C++ build tools, CMake 3.21+.
 
-Requires a **built** CommonLibSSE-NG checkout at the same pin NPC Pathing NG uses: `b93280e832f263dbef44e44cbe2936622a02f91a`. See [Modern-NPC-Pathing/BUILDING.md](https://github.com/ShugokiFable/Modern-NPC-Pathing/blob/main/BUILDING.md).
+Requires a **built** CommonLibSSE-NG checkout at the same pin NPC Pathing NG uses: `b93280e832f263dbef44e44cbe2936622a02f91a`. See [Modern-NPC-Pathing/BUILDING.md](https://github.com/SenjuWoo/Modern-NPC-Pathing/blob/main/BUILDING.md).
 
 ```powershell
 cmake -S . -B build -G "Visual Studio 17 2022" -A x64 -DCOMMONLIB_SSE_ROOT=<path to extern/CommonLibSSE>
@@ -112,7 +112,7 @@ The license file in this repository is [MIT](LICENSE).
 
 - **TheShinyHaxorus** — original StepUpOnto SKSE: all step-up design and implementation. This is their work with a two-function compatibility guard added.
 - SkyParkour V3 by Waffuru — the `SkyParkourOngoing` graph variable this build checks.
-- Compatibility patch by karlo — [Modern NPC Pathing](https://github.com/ShugokiFable/Modern-NPC-Pathing).
+- Compatibility patch by karlo — [Modern NPC Pathing](https://github.com/SenjuWoo/Modern-NPC-Pathing).
 
 ## License
 
