@@ -14,7 +14,7 @@
 <p align="center">
   <a href="https://github.com/SenjuWoo/StepUpOntoSKSE-patched/actions/workflows/build.yml"><img src="https://github.com/SenjuWoo/StepUpOntoSKSE-patched/actions/workflows/build.yml/badge.svg" alt="Build"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f0b060?labelColor=0d0f11" alt="MIT License"></a>
-  <a href="https://github.com/SenjuWoo/StepUpOntoSKSE-patched/releases/tag/v1.5.1"><img src="https://img.shields.io/badge/release-v1.5.1-f0b060?labelColor=0d0f11" alt="v1.5.1"></a>
+  <a href="https://github.com/SenjuWoo/StepUpOntoSKSE-patched/releases/latest"><img src="https://img.shields.io/github/v/release/SenjuWoo/StepUpOntoSKSE-patched?label=release&color=f0b060" alt="latest release"></a>
   <img src="https://img.shields.io/badge/CommonLibSSE--NG-b93280e-8f9aa6?labelColor=0d0f11" alt="CommonLibSSE-NG pin">
 </p>
 
